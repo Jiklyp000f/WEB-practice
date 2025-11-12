@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-column {
+    padding: 2vh 2vh 2vh 2vh;
+    background-color: aqua;
+}
+
+.right-column {
+    padding: 2vh 2vh 2vh 2vh;
+    background-color: aquamarine;
+}
+
+.right-column img {
+    width: 21vh;
+}

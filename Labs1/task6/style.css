@@ -1,0 +1,29 @@
+header {
+    height: 90px;
+    background-color: aliceblue;
+}
+
+nav {
+    height: 90px;
+    background-color: rgb(13, 53, 53);
+}
+
+main {
+    height: 960px;
+    background-color: aquamarine;
+}
+
+article {
+    height: 200px;
+    background-color: rgb(0, 255, 76);
+}
+
+aside {
+    height: 90px;
+    background-color: rgb(185, 185, 29);
+}
+
+footer {
+    height: 90px;
+    border-color: bisque;
+}

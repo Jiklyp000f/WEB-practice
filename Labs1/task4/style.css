@@ -1,0 +1,23 @@
+nav {
+    display: flex;
+    background-color: gray;
+}
+
+nav ul {
+    padding: none;
+    list-style-type: none;
+}
+
+li {
+    margin: 0 2vh 0 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 1vh 1vh 1vh 1vh;
+}
+
+a:hover {
+    color: black;
+}
