@@ -4,3 +4,28 @@ form {
     border: 1px solid black;
     padding: 1vh 1vh 1vh 1vh;
 }
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1vh;
+    border: 3px solid black;
+    border-radius: 14px;
+}
+
+button {
+    background-color: aquamarine;
+    width: 100%;
+    padding: 2vh;
+    border: 3px solid black;
+    border-radius: 14px;
+}
+
+button:hover {
+    background-color: blue;
+}
