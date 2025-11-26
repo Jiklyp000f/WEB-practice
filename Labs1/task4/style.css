@@ -1,11 +1,14 @@
 nav {
     display: flex;
-    background-color: gray;
+    background-color: gray;  
+    justify-content: center;  
 }
 
 nav ul {
     padding: none;
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
 }
 
 li {

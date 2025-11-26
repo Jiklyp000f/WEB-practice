@@ -1,11 +1,22 @@
 header {
     height: 90px;
-    background-color: aliceblue;
+    background-color: rgb(44, 146, 235);
 }
 
 nav {
     height: 90px;
     background-color: rgb(13, 53, 53);
+    display: flex;
+    background-color: gray;  
+    justify-content: center; 
+}
+
+nav ul {
+    padding: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
 }
 
 main {
@@ -15,15 +26,19 @@ main {
 
 article {
     height: 200px;
-    background-color: rgb(0, 255, 76);
+    background-color: rgb(0, 255, 149);
 }
 
 aside {
     height: 90px;
-    background-color: rgb(185, 185, 29);
+    background-color: rgb(0, 247, 103);
 }
 
 footer {
     height: 90px;
-    border-color: bisque;
+    background-color: rgb(51, 255, 0);
+}
+
+h1 {
+    margin: 0;
 }
