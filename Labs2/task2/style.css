@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    background-color: #2c3e50;
+    border-radius: 5px;
+}
+
+.nav__item {
+    position: relative;
+}
+
+.nav__link,
+.nav__dropdown-link,
+.nav__submenu-link {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.nav__link:hover,
+.nav__dropdown-link:hover,
+.nav__submenu-link:hover {
+    background-color: #3498db;
+}
+
+.nav__dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #34495e;
+    list-style: none;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 100;
+}
+
+.nav__item:hover > .nav__dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav__dropdown-item {
+    position: relative;
+}
+
+.nav__submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #1abc9c;
+    list-style: none;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 100;
+}
+
+.nav__dropdown-item:hover > .nav__submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav__toggle,
+.nav__submenu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav__list {
+        flex-direction: column;
+    }
+    
+    .nav__link,
+    .nav__dropdown-link,
+    .nav__submenu-link {
+        padding: 15px;
+        width: 100%;
+    }
+    
+    .nav__dropdown,
+    .nav__submenu {
+        display: none;
+        position: static;
+        background-color: rgba(0, 0, 0, 0.2);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav__submenu {
+        background-color: rgba(0, 0, 0, 0.3);
+        margin-left: 15px;
+    }
+    
+    #services-toggle:checked ~ .nav__dropdown,
+    #design-toggle:checked ~ .nav__submenu {
+        display: block;
+    }
+    
+    .nav__item:hover > .nav__dropdown,
+    .nav__dropdown-item:hover > .nav__submenu {
+        display: none;
+    }
+}
+
+.nav__link:focus,
+.nav__dropdown-link:focus,
+.nav__submenu-link:focus {
+    outline: 2px solid #3498db;
+    outline-offset: -2px;
+}

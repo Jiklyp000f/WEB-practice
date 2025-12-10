@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выпадающее меню</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="#" class="nav__link">Главная</a>
+            </li>
+            <li class="nav__item nav__item--has-dropdown">
+                <label for="services-toggle" class="nav__link nav__link--toggle">Услуги</label>
+                <input type="checkbox" id="services-toggle" class="nav__toggle" hidden>
+                <ul class="nav__dropdown">
+                    <li class="nav__dropdown-item">
+                        <a href="#" class="nav__dropdown-link">Веб-разработка</a>
+                    </li>
+                    <li class="nav__dropdown-item nav__dropdown-item--has-submenu">
+                        <label for="design-toggle" class="nav__dropdown-link nav__dropdown-link--toggle">Дизайн</label>
+                        <input type="checkbox" id="design-toggle" class="nav__submenu-toggle" hidden>
+                        <ul class="nav__submenu">
+                            <li class="nav__submenu-item">
+                                <a href="#" class="nav__submenu-link">Логотипы</a>
+                            </li>
+                            <li class="nav__submenu-item">
+                                <a href="#" class="nav__submenu-link">Интерфейсы</a>
+                            </li>
+                            <li class="nav__submenu-item">
+                                <a href="#" class="nav__submenu-link">Иллюстрации</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__dropdown-item">
+                        <a href="#" class="nav__dropdown-link">Маркетинг</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">О нас</a>
+            </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

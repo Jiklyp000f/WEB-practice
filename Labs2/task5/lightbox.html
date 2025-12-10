@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Лайтбокс-галерея</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="gallery-title">Галерея фотографий</h1>
+        
+        <div class="gallery">
+            <a href="#lightbox-1" class="gallery-thumb">
+                <img src="https://www.fotoprizer.ru/img/221579_big.jpg" 
+                     alt="Горный пейзаж" class="thumb-image">
+                <div class="thumb-overlay">
+                    <span class="thumb-text">Горы</span>
+                </div>
+            </a>
+            
+            <a href="#lightbox-2" class="gallery-thumb">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=300&fit=crop" 
+                     alt="Тропический пляж" class="thumb-image">
+                <div class="thumb-overlay">
+                    <span class="thumb-text">Пляж</span>
+                </div>
+            </a>
+            
+            <a href="#lightbox-3" class="gallery-thumb">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop" 
+                     alt="Лесная тропа" class="thumb-image">
+                <div class="thumb-overlay">
+                    <span class="thumb-text">Лес</span>
+                </div>
+            </a>
+            
+            <a href="#lightbox-4" class="gallery-thumb">
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=300&fit=crop" 
+                     alt="Туманный лес" class="thumb-image">
+                <div class="thumb-overlay">
+                    <span class="thumb-text">Туман</span>
+                </div>
+            </a>
+        </div>
+        
+        <div class="lightbox" id="lightbox-1">
+            <div class="lightbox-overlay"></div>
+            <div class="lightbox-content">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop" 
+                     alt="Горный пейзаж" class="lightbox-image">
+                <div class="lightbox-info">
+                    <h2 class="lightbox-title">Горный пейзаж</h2>
+                    <p class="lightbox-description">Величественные горные вершины, покрытые снегом, на фоне голубого неба.</p>
+                </div>
+                <a href="#" class="lightbox-close" aria-label="Закрыть">×</a>
+            </div>
+        </div>
+        
+        <div class="lightbox" id="lightbox-2">
+            <div class="lightbox-overlay"></div>
+            <div class="lightbox-content">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&h=800&fit=crop" 
+                     alt="Тропический пляж" class="lightbox-image">
+                <div class="lightbox-info">
+                    <h2 class="lightbox-title">Тропический пляж</h2>
+                    <p class="lightbox-description">Бирюзовое море, белый песок и пальмы - идеальное место для отдыха.</p>
+                </div>
+                <a href="#" class="lightbox-close" aria-label="Закрыть">×</a>
+            </div>
+        </div>
+        
+        <div class="lightbox" id="lightbox-3">
+            <div class="lightbox-overlay"></div>
+            <div class="lightbox-content">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&h=800&fit=crop" 
+                     alt="Лесная тропа" class="lightbox-image">
+                <div class="lightbox-info">
+                    <h2 class="lightbox-title">Лесная тропа</h2>
+                    <p class="lightbox-description">Тайная тропинка в густом лесу, ведущая к неизведанным местам.</p>
+                </div>
+                <a href="#" class="lightbox-close" aria-label="Закрыть">×</a>
+            </div>
+        </div>
+        
+        <div class="lightbox" id="lightbox-4">
+            <div class="lightbox-overlay"></div>
+            <div class="lightbox-content">
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&h=800&fit=crop" 
+                     alt="Туманный лес" class="lightbox-image">
+                <div class="lightbox-info">
+                    <h2 class="lightbox-title">Туманный лес</h2>
+                    <p class="lightbox-description">Таинственный лес, окутанный утренним туманом, создает волшебную атмосферу.</p>
+                </div>
+                <a href="#" class="lightbox-close" aria-label="Закрыть">×</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

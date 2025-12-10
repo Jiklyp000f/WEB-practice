@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кастомный UI: курсоры и скроллбар</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">Кастомный пользовательский интерфейс</h1>
+            <p class="header__subtitle">Демонстрация кастомных курсоров и стилизованного скроллбара</p>
+        </header>
+
+        <main class="main-content">
+            <section class="interactive-section">
+                <h2 class="section__title">Интерактивные элементы</h2>
+                
+                <div class="buttons-group">
+                    <button class="button button--primary">Основная кнопка</button>
+                    <button class="button button--secondary">Дополнительная кнопка</button>
+                    <button class="button button--danger">Опасное действие</button>
+                    <button class="button button--disabled" disabled>Неактивная кнопка</button>
+                </div>
+
+                <div class="links-group">
+                    <a href="#" class="link">Обычная ссылка</a>
+                    <a href="#" class="link link--external">Внешняя ссылка</a>
+                    <a href="#" class="link link--download">Ссылка на скачивание</a>
+                    <a href="#" class="link link--help">Справка</a>
+                </div>
+
+                <div class="cursor-demo">
+                    <div class="cursor-item" data-cursor="help">
+                        <div class="cursor-icon">?</div>
+                        <p>Наведи на меня для справки (cursor: help)</p>
+                    </div>
+                    <div class="cursor-item" data-cursor="grab">
+                        <div class="cursor-icon">↕</div>
+                        <p>Наведи для перетаскивания (cursor: grab)</p>
+                    </div>
+                    <div class="cursor-item" data-cursor="zoom-in">
+                        <div class="cursor-icon">🔍</div>
+                        <p>Наведи для увеличения (cursor: zoom-in)</p>
+                    </div>
+                    <div class="cursor-item" data-cursor="not-allowed">
+                        <div class="cursor-icon">⛔</div>
+                        <p>Наведи для запрета (cursor: not-allowed)</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="scrollable-section">
+                <h2 class="section__title">Секция с прокруткой</h2>
+                <div class="scrollable-content">
+                    <article class="article">
+                        <h3 class="article__title">Длинная статья о кастомных интерфейсах</h3>
+                        
+                        <p>Кастомные курсоры и скроллбары позволяют создавать уникальный пользовательский опыт на веб-сайтах. В этом разделе мы рассмотрим, как можно изменить стандартное поведение элементов интерфейса с помощью CSS.</p>
+                        
+                        <p>Стилизация скроллбаров стала возможной благодаря браузерным префиксам, в частности, для Webkit-браузеров (Chrome, Safari, Edge) используются правила <code>::-webkit-scrollbar</code>.</p>
+                        
+                        <h4>Преимущества кастомных скроллбаров:</h4>
+                        <ul>
+                            <li>Улучшение визуальной согласованности с дизайном сайта</li>
+                            <li>Возможность создания более тонких или стилизованных полос прокрутки</li>
+                            <li>Лучшая интеграция с общим визуальным стилем</li>
+                        </ul>
+                        
+                        <p>Кастомные курсоры также могут быть полезны для различных интерактивных элементов. Например, можно изменить курсор для кнопок, ссылок или интерактивных областей.</p>
+                        
+                        <h4>Типы курсоров в CSS:</h4>
+                        <ul>
+                            <li><code>pointer</code> - для кликабельных элементов</li>
+                            <li><code>grab</code> - для элементов, которые можно перетаскивать</li>
+                            <li><code>help</code> - для элементов со справкой</li>
+                            <li><code>not-allowed</code> - для недоступных действий</li>
+                            <li><code>zoom-in</code> - для элементов с функцией увеличения</li>
+                        </ul>
+                        
+                        <p>Важно помнить, что кастомные курсоры должны использоваться разумно, чтобы не запутать пользователя. Курсор должен интуитивно подсказывать, какое действие можно выполнить с элементом.</p>
+                        
+                        <p>Стилизация скроллбаров также имеет свои ограничения. В Firefox используются другие правила для кастомизации скроллбаров (например, <code>scrollbar-color</code> и <code>scrollbar-width</code>).</p>
+                        
+                        <h4>Пример кода для стилизации скроллбара:</h4>
+                        <pre>
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}</pre>
+                        
+                        <p>Использование кастомных UI-элементов требует тщательного тестирования на различных устройствах и браузерах. Всегда предоставляйте fallback-стили для браузеров, которые не поддерживают данные свойства.</p>
+                        
+                        <p>В заключение, кастомизация интерфейса — это мощный инструмент для создания уникального дизайна, но он должен использоваться с учетом юзабилити и доступности. Пользователи привыкли к стандартным индикаторам, поэтому изменения должны быть интуитивно понятными.</p>
+                        
+                        <p>Эта статья намеренно длинная, чтобы продемонстрировать кастомный скроллбар. Прокрутите вниз, чтобы увидеть его в действии!</p>
+                        
+                        <p>Дополнительный текст для увеличения высоты контента и демонстрации скроллбара. Чем больше контента, тем заметнее становится кастомная полоса прокрутки.</p>
+                        
+                        <p>Еще немного текста: дизайн пользовательского интерфейса играет ключевую роль в восприятии веб-сайта. Современные CSS-технологии позволяют тонко настраивать внешний вид элементов, создавая гармоничный и приятный глазу интерфейс.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Демонстрация кастомных курсоров и скроллбара. Проверьте в браузерах на основе WebKit (Chrome, Safari, Edge).</p>
+        </footer>
+    </div>
+</body>
+</html>

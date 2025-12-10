@@ -1,0 +1,211 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+}
+
+.custom-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.form-section:last-child {
+    margin-bottom: 0;
+}
+
+.form-legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 0 10px;
+    background-color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-checkbox,
+.form-radio {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.form-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    position: relative;
+    padding-left: 35px;
+    min-height: 24px;
+    transition: color 0.3s ease;
+    user-select: none;
+}
+
+.form-label:hover {
+    color: #3498db;
+}
+
+.form-label:focus-within {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+.form-label--disabled {
+    cursor: not-allowed;
+    color: #bdc3c7;
+}
+
+.form-label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.form-label:hover::before {
+    border-color: #2980b9;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.form-label::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+    width: 22px;
+    height: 22px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.form-checkbox:checked + .form-label::before {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.form-checkbox:checked + .form-label::after {
+    transform: translateY(-50%) scale(1);
+}
+
+.form-radio + .form-label::before {
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+}
+
+.form-radio + .form-label::after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.form-radio:checked + .form-label::before {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.form-radio:checked + .form-label::after {
+    transform: translateY(-50%) scale(1);
+}
+
+.form-checkbox:disabled + .form-label,
+.form-radio:disabled + .form-label {
+    cursor: not-allowed;
+    color: #bdc3c7;
+}
+
+.form-checkbox:disabled + .form-label::before,
+.form-radio:disabled + .form-label::before {
+    border-color: #bdc3c7;
+    background-color: #ecf0f1;
+}
+
+.form-checkbox:disabled:checked + .form-label::before,
+.form-radio:disabled:checked + .form-label::before {
+    background-color: #bdc3c7;
+    border-color: #bdc3c7;
+}
+
+.form-checkbox:disabled + .form-label:hover::before,
+.form-radio:disabled + .form-label:hover::before {
+    box-shadow: none;
+}
+
+.form-checkbox:focus + .form-label::before,
+.form-radio:focus + .form-label::before {
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
+}
+
+.form-label-text {
+    margin-left: 10px;
+}
+
+@media (max-width: 480px) {
+    .custom-form {
+        padding: 20px 15px;
+    }
+    
+    .form-section {
+        padding: 15px;
+    }
+    
+    .form-label {
+        font-size: 15px;
+    }
+}
