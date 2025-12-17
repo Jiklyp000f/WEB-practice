@@ -1,0 +1,84 @@
+.delegation-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+li:hover {
+    background-color: #f0f0f0;
+    transform: translateX(5px);
+}
+
+li.clicked {
+    background-color: #e0e0e0 !important;
+    color: #333;
+    font-weight: bold;
+    border-color: #999;
+    text-decoration: line-through;
+}
+
+.controls {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.counter {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+#itemsCounter {
+    font-weight: bold;
+    color: #4CAF50;
+}

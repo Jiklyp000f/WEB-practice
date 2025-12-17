@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Делегирование событий</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="delegation-container">
+            <h2>Делегирование событий в списке</h2>
+            <p>Кликните на любой пункт списка, чтобы отметить его</p>
+            
+            <ul id="itemsList">
+                <li>Первый элемент списка</li>
+                <li>Второй элемент списка</li>
+                <li>Третий элемент списка</li>
+                <li>Четвертый элемент списка</li>
+            </ul>
+            
+            <div class="controls">
+                <button id="addItemButton">Добавить новый элемент</button>
+                <div class="counter">Всего элементов: <span id="itemsCounter">4</span></div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>

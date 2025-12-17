@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Валидация формы</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="form-container">
+            <h2>Форма обратной связи</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nameInput">Имя:</label>
+                    <input type="text" id="nameInput" placeholder="Введите ваше имя" />
+                </div>
+                <div class="form-group">
+                    <label for="emailInput">Email:</label>
+                    <input type="email" id="emailInput" placeholder="example@mail.com" />
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+            <div id="messageArea"></div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>

@@ -1,0 +1,48 @@
+.counter-container {
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#counterDisplay {
+    font-size: 24px;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#counterValue {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    transform: scale(0.98);
+}
